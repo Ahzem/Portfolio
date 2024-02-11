@@ -1,0 +1,172 @@
+@import url(css/variables.css);
+
+.root{
+  --main-color:#007BA2;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #007BA2;
+    border-radius: 20px 20px 0 0;
+    z-index: 9;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    height: 80px;
+  }
+  
+  .header__nav__option {
+    text-align: center;
+  }
+  
+  .header__nav__menu {
+    display: inline-block;
+  }
+  .header__nav__menu ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+  }
+  .header__nav__menu ul li.active a:after {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+  .header__nav__menu ul li:hover a:after {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+
+  .header__nav__menu ul li a img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .icon-container {
+    opacity: 0.4; /* Change the opacity of the container */
+  }
+
+  .header__nav__menu ul li{
+    margin: 0 50px 50px 50px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  .icon-container:hover {
+    opacity: 1; /* Change the opacity of the container when hovering over it */
+    transition: 0.5s;
+  }
+
+  .top-notch {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        width: 15%;
+        background: #00c1e731;
+        border-radius: 0 0 20px 20px;
+        z-index: 9;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        height: 25px;
+        margin: auto;
+        display: inline;
+        text-align: center;
+    }
+
+/*responsive design for the header*/
+
+@media (max-width: 768px) {
+    .header {
+      height: 60px;
+    }
+    .header__nav__menu ul li {
+      margin: 0 20px 20px 20px;
+    }
+    .header__nav__menu ul li a img {
+      height: 28px;
+      width: 28px;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .header {
+      height: 50px;
+    }
+    .header__nav__menu ul li {
+      margin: 0 10px 10px 10px;
+    }
+    .header__nav__menu ul li a img {
+      height: 28px;
+      width: 28px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .header {
+      height: 40px;
+    }
+    .header__nav__menu ul li {
+      margin: 0 5px 5px 5px;
+    }
+    .header__nav__menu ul li a img {
+      height: 22px;
+      width: 22px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .header {
+      height: 30px;
+    }
+    .header__nav__menu ul li {
+      margin: 0 5px 5px 5px;
+    }
+    .header__nav__menu ul li a img {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  
+  @media (max-width: 280px) {
+    .header {
+      height: 20px;
+    }
+    .header__nav__menu ul li {
+      margin: 0 5px 5px 5px;
+    }
+    .header__nav__menu ul li a img {
+      height: 15px;
+      width: 15px;
+    }
+  }
+  
+  @media (max-width: 240px) {
+    .header {
+      height: 10px;
+    }
+    .header__nav__menu ul li {
+      margin: 0 5px 5px 5px;
+    }
+    .header__nav__menu ul li a img {
+      height: 10px;
+      width: 10px;
+    }
+  }
+  
+  @media (max-width: 200px) {
+    .header {
+      height: 5px;
+    }
+    .header__nav__menu ul li {
+      margin: 0 5px 5px 5px;
+    }
+    .header__nav__menu ul li a img {
+      height: 5px;
+      width: 5px;
+    }
+  }

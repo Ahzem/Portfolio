@@ -1,0 +1,14 @@
+.root{
+    --main-clr: #00c1e7;
+    --main-clr-dark: #00a3c6;
+    --main-clr-light: #00d9ff;
+    --main-clr-lighter: #00eaff;
+    --main-clr-lightest: #00f7ff;
+    --main-clr-darkest: #0089a9;
+    --main-clr-darker: #006b88;
+    --main-clr-darkest: #004c67;
+    --main-clr-darkest: #002e46;
+    --main-clr-darkest: #001127;
+    --black : #000000;
+    --white : #ffffff;
+}

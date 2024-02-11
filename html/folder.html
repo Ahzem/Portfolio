@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ahzem's Portfolio">
+    <meta name="keywords" content="Developer, Ahzem, Creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ahzem | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+    
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/header.css" type="text/css">
+    <link rel="stylesheet" href="../css/body.css" type="text/css">
+    <link rel="stylesheet" href=".../css/hero.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/gallery.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Js Files -->
+    <script src="../js/gallery.js" defer></script>
+
+
+</head>
+<body class="non-selectable">
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__nav__option">
+            <nav class="header__nav__menu">
+                <ul>
+                    <li>
+                        <a href="../html/about.html">
+                            <div class="icon-container">
+                                <img src="../img/icons/icons8-about.png" alt="Empty Icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="html/experiences">
+                            <div class="icon-container">
+                                <img src="../img/icons/icons8-briefcase.png" alt="Empty Icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.html">
+                            <div class="icon-container">
+                                <img src="../img/icons/icons8-home.png" alt="Filled Icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="icon-container-active">
+                                <img src="../img/icons/icons8-folder-filled.png" alt="Empty Icon">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="html/about">
+                            <div class="icon-container">
+                                <img src="../img/icons/icons8-menu.png" alt="Empty Icon">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- selecting section | blogs or images -->
+    <section class="selection__section">
+        <div class="selection__section__container">
+            <div class="selection__container__blogs">
+                <a onclick="openBlogs();">
+                    <div class="selection__container__icon">
+                        <img src="../img/icons/icons8-news.png" alt="Blog Icon">
+                    </div>
+                    <div class="selection__container__text">
+                        <h2>Blogs</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="selection__container__images">
+                <a onclick="openGallery();">
+                    <div class="selection__container__icon">
+                        <img src="../img/icons/icons8-picture-filled.png" alt="Image Icon">
+                    </div>
+                    <div class="selection__container__text">
+                        <h2>Images</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Section Begin -->
+        <section id="gallery_section" class="gallery_section">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+                        <span>Here are some of the events I've attended</span>
+                        <h2>Photo Gallery</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pages">
+                <div id="prevButton" onclick="showPrevPage()"><img src="../img/icons/prev.png" alt="Back Icon"></div>
+    
+                <div class="gallery">
+                    <div class="gallery__page gallery__page1">                    
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work1.jpg" class="zoom" onclick="openModal(this)" alt="work1" data-caption="MLSA January Meetup 2024 | Microsoft Srilanka">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work8.jpg" class="zoom" onclick="openModal(this)" alt="work2" data-caption="devfest 2023 Main Conference | Bishops College Auditorium">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work3.jpg" class="zoom" onclick="openModal(this)" alt="work3" data-caption="MLSA January Meetup 2024 | Microsoft Srilanka">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work11.jpg" class="zoom" onclick="openModal(this)" alt="work4" data-caption="With Chamod Shehanka | devfest 2023 Main Conference | Bishops College Auditorium">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work5.jpg" class="zoom" onclick="openModal(this)" alt="work5" data-caption="MLSA January Meetup 2024 | Microsoft Srilanka">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work6.jpg" class="zoom" onclick="openModal(this)" alt="work6" data-caption="MLSA January Meetup 2024 | Microsoft Srilanka">
+                        </div>
+                    </div>
+                    <div class="gallery__page gallery__page2" style="display: none;">
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work2.jpg" class="zoom" onclick="openModal(this)" alt="work8" data-caption="MLSA January Meetup 2024 | Microsoft Srilanka">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work14.jpg" class="zoom" onclick="openModal(this)" alt="work9" data-caption="devfest 2023 Codelabs | IIT Bambalapitiya"">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work10.jpg" class="zoom" onclick="openModal(this)" alt="work10" data-caption="With Chamod Shehanka | devfest 2023 Main Conference | Bishops College Auditorium">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work4.jpg" class="zoom" onclick="openModal(this)" alt="work11" data-caption="MLSA January Meetup 2024 | Microsoft Srilanka">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work12.jpg" class="zoom" onclick="openModal(this)" alt="work12" data-caption="With Ahamed Safnaj | devfest 2023 Codelabs | IIT Bambalapitiya"">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work13.jpg" class="zoom" onclick="openModal(this)" alt="work13" data-caption="devfest 2023 Codelabs | IIT Bambalapitiya">
+                        </div>
+                    </div>
+                    <div class="gallery__page gallery__page3" style="display: none;">
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work7.jpg" class="zoom" onclick="openModal(this)" alt="work14" data-caption="devfest 2023 Main Conference | Bishops College Auditorium">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work9.jpg" class="zoom" onclick="openModal(this)" alt="work15" data-caption="devfest 2023 Main Conference | Bishops College Auditorium">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work15.jpg" class="zoom" onclick="openModal(this)" alt="work16" data-caption="Swags | devfest 2023 Main Conference | Bishops College Auditorium">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work16.jpg" class="zoom" onclick="openModal(this)" alt="work17" data-caption="Personal Branding Session | TAG Auditorium | ITUM">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work17.jpg" class="zoom" onclick="openModal(this)" alt="work18" data-caption="Fundamentals of Software Engineering Session | ITUM">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="../img/gallery/work18.jpg" class="zoom" onclick="openModal(this)" alt="work19" data-caption="Swags | Fundamentals of Software Engineering Session | ITUM">
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="nextButton" onclick="showNextPage()"><img src="../img/icons/next.png" alt="Next Icon"></div>
+            </div>
+        
+            <!-- The modal -->
+            <div id="modal" class="modal">
+                <!-- The close button -->
+                <span class="close" onclick="closeModal()">&times;</span>
+                <!-- Caption text -->
+                <div id="caption"></div>
+                <!-- Modal content -->
+                <img id="modal-image" class="modal-content">
+            </div>
+        </section>
+    <!-- Image Section End -->
+
+    <!-- Blogs Section Begin -->
+    <section id="blogs_section" class="blogs_section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title center-title">
+                    <span>Here are some of the blogs I've written</span>
+                    <h2>Blog Posts</h2>
+                </div>
+            </div>
+        </div>
+        <div class="pages">
+            <div id="prevButton" onclick="showPrevBlogPage()"><img src="../img/icons/prev.png" alt="Back Icon"></div>
+            <div class="blogs__page blogs__page1">
+                <div class="blogs__item__side">
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*Kr6xvAU27xLzGv-n.jpg" alt="Blog1">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/embrace-courseras-no-cost-education-pathway-a1602a61edd1" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Embrace Coursera’s No-Cost Education Pathway</h3>
+                            <p>Coursera is a comprehensive online learning platform offering a vast array of courses in collaboration with universities and institutions worldwide.</p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*INY_v-n0F7QNVxpC.jpg" alt="Blog2">
+                        </div>
+                        <div class="view__link">
+                            <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-iot-developers-96b4a9a4badf" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | IoT Developers</h3>
+                            <p>IoT Developers are the architects of the connected world. They design and develop software and hardware solutions that enable devices and objects to....</p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*lfc0phxuXnfLOabH.jpg" alt="Blog3">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-game-developers-41450bf08269" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | Game Developers</h3>
+                            <p>Game Developers are the architects of fun, responsible for creating video games that entertain, challenge, and inspire players.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogs__item__side">
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*nDJFleAPaxUsfmMp" alt="Blog5">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-augmented-reality-ar-developers-28aabf4c4e67" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | AR Developers</h3>
+                            <p>AR Developers are the visionaries who bring digital content into the real world. They design and create AR applications and experiences....</p>
+                        </div>
+                    </div> 
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*iWFxDvG9GBDFJEGv.jpg" alt="Blog4">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-virtual-reality-vr-developers-9104e4f8d91e" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | VR Developers</h3>
+                            <p>VR Developers are the creators of digital realms that blur the line between reality and imagination. They design, develop, and optimize....</p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*cbRrbkWU39XwskNH.jpg" alt="Blog6">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-blockchain-developers-7aa6499afb33" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | Blockchain Developers</h3>
+                            <p>Blockchain Developers are the builders of the digital trust infrastructure. They design, develop, and maintain....</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs__page blogs__page2" style="display: none;">
+                <div class="blogs__item__side">
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*CHFv1txlKlR1z2CV.jpg" alt="Blog7">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-ai-ethics-experts-84234e915b19" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | AI Ethics Experts</h3>
+                            <p>AI Ethics Experts serve as the ethical compass within the vast landscape of artificial intelligence.</p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*vJCj1TUzoLc4XcqZ" alt="Blog8">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-ethical-hackers-2a1e4565f4ab" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | Ethical Hackers</h3>
+                            <p>Ethical Hackers, also known as white-hat hackers, are the digital sleuths who use their cybersecurity skills for good.  </p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*-layWXK418YgHRMO" alt="Blog9">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-machine-learning-engineers-1cb199e5a5d2" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | Machine Learning Engineers</h3>
+                            <p>Machine Learning Engineers are the modern-day sorcerers who train machines to think and learn.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogs__item__side">
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*i4v0h5IddxYHzThM.jpg" alt="Blog10">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-digital-marketing-specialists-e7d5848f0bdf" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | Digital Marketing Specialists</h3>
+                            <p>Digital Marketing Specialists are the virtuosos of online visibility. They craft and execute digital....</p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*HJpHZt3NsoKj55Hz" alt="Blog11">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-devops-engineers-68e5f7428aa1" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | DevOps Engineers</h3>
+                            <p>DevOps Engineers are the builders of harmony in the software world, harmonizing development and operations....</p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*9R1q4mYmBBQFfInH" alt="Blog12">
+                            <div class="view__link">
+                                <a href="hhttps://medium.com/@ahzem/exploring-it-professions-worldwide-data-analysts-e08cc3c0fb52" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | Data Analysts</h3>
+                            <p>Data Analysts are the modern-day alchemists, transforming raw data into actionable insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs__page blogs__page3" style="display: none;">
+                <div class="blogs__item__side">
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*xQ_oKhG84NLgDroT.jpg" alt="Blog13">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-ui-ux-designers-b620f8140dce" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | UI/UX Designersr</h3>
+                            <p>UI/UX Designers are the architects of digital interactions, creating the bridge between users and technology. </p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*vx5uNtqB9jlEkLDv.jpg" alt="Blog13">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-project-managers-3eb6bd42b939" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | Project Managers</h3>
+                            <p>Imagine a grand symphony performance, where the conductor leads a diverse orchestra to create harmonious music.</p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*Pg6E0GnT2KoynZIk.jpg" alt="Blog13">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-it-professions-worldwide-cloud-architects-2fa293126745" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | Cloud Architects</h3>
+                            <p>Cloud Architects are the masterminds who design and implement cloud computing solutions, enabling organizations...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogs__item__side">
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*PMoTuZvLQ4kWUmvS" alt="Blog13">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-professions-in-the-digital-world-data-scientists-34de0548062e" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | Data Scientists</h3>
+                            <p>Data Scientists are the magicians of the digital age, conjuring meaning from vast datasets and transforming them....</p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*WOx4ODdvzxYdugSm.jpeg" alt="Blog13">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-professions-in-the-digital-world-cybersecurity-analysts-engineers-4e5c3a1e4144" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | Cybersecurity Analysts/Engineers</h3>
+                            <p>In our interconnected globe, the role of Cybersecurity Analysts/Engineers has risen to paramount importance.</p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*uLqRTcnDBdxzO_o0.jpg" alt="Blog13">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-professions-in-the-digital-world-system-administrators-d8fb125b62d8" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide | System Administrators</h3>
+                            <p>System Administrators serve as the guardians of digital ecosystems, tasked with orchestrating and safeguarding....</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogs__page blogs__page4" style="display: none;">
+                <div class="blogs__item__side">
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*XxjcgXhF3hg8p2wM" alt="Blog13">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/exploring-professions-in-the-digital-world-software-developers-bfed3e5c7e6d" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Exploring IT Professions Worldwide| Software Developers</h3>
+                            <p>In our digitized universe, Software Developers emerge as the architects of innovation, wielding their expertise to....</p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*HNaShLkaWmftDAhx" alt="Blog13">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/shaping-tomorrows-leaders-57ed38f65413" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Shaping Tomorrow’s Leaders</h3>
+                            <p>Education is a two-way street, and students are not merely passive recipients of knowledge. They play an active and vital role in shaping their own educational journey.</p>
+                        </div>
+                    </div>
+                    <div class="blogs__item">
+                        <div class="blogs__item__image">
+                            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/0*n_vgQLGCA4qmWeZL" alt="Blog13">
+                            <div class="view__link">
+                                <a href="https://medium.com/@ahzem/building-a-strong-foundation-bea57241a309" target="_blank" rel="noopener" class="view__btn">View on Medium <i class="fa fa-medium"></i></a>
+                            </div>
+                        </div>
+                        <div class="blogs__item__text">
+                            <h3>Building a Strong Foundation</h3>
+                            <p>Education is the key to unlocking the full potential of individuals and societies, and a well-rounded education system is essential for a nation’s progress. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="nextButton" onclick="showNextBlogPage()"><img src="../img/icons/next.png" alt="Next Icon"></div>
+        </div>
+    </section>
+
+    <!-- Blogs Section End -->
+</body>
+</html>
