@@ -143,7 +143,7 @@
 }
 
 .info__container__text p:hover {
-    color: #ffffff;
+    color: #ffffffd0;
 }
 
 .info__container__text h4 {
@@ -161,4 +161,128 @@
 .services__item h4 {
 
     margin-bottom: -3px;
+}
+
+
+/*Education Section*/
+
+.education__section {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 110px;
+}
+
+.timeline__container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 900px;
+    height: 120px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+  /* Place the timeline__container to the left */
+.left {
+    left: 150px;
+}
+  
+  /* Place the timeline__container to the right */
+.right {
+    right: 150px;
+}
+
+/* Add arrows to the left timeline__container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 15px;
+    width: 0;
+    z-index: 1;
+    right: 80px;
+    border: medium solid rgb(0, 0, 0);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #ffffff50;
+  }
+  
+  /* Add arrows to the right timeline__container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 15px;
+    width: 0;
+    z-index: 1;
+    left: 80px;
+    border: medium solid rgb(0, 0, 0);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ffffff50 transparent transparent;
+}
+
+.right:hover::before {
+    border-color: transparent #008fbb transparent transparent;
+    transition: all 0.5s ease;
+}
+
+.left:hover::before {
+    border-color: transparent transparent transparent #008fbb;
+    transition: all 0.5s ease;
+}
+
+.education__pic__item {
+    width:80px;
+    height: 120px;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.education__pic__item img {
+    width: 50px;
+    height: 50px;
+}
+
+.education__text__item {
+    border-radius: 8px;
+    border: 1px solid #ffffff50;
+    top: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 120px;
+    line-height: 0.6;
+}
+
+.education__text__item:hover {
+    border: 1px solid #008fbb;
+    transition: all 0.5s ease;
+}
+
+.education__text__item p {
+    font-size: 0.9rem;
+    font-weight: 350;
+    color: #ffffffab;
+    line-height: 1.1;
+}
+
+.education__content__title h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffffce;
+    margin-bottom: -5px;
+}
+
+.timeline__container:hover h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #008fbb;
+    transition: all 0.5s ease;
+}
+
+.timeline__container:hover p {
+    color: #ffffffd0;
+    transition: all 0.5s ease;
 }

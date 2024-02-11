@@ -25,6 +25,7 @@
 
     <!-- Js Files -->
     <script src="../js/gallery.js" defer></script>
+    <script src="../js/about.js" defer></script>
 
 
 </head>
@@ -80,7 +81,7 @@
     <section class="selection__section">
         <div class="selection__section__container">
             <div class="selection__container__info">
-                <a onclick="">
+                <a onclick="openInfo()">
                     <div class="selection__container__icon">
                         <img src="../img/icons/icons8-info.png" alt="Blog Icon">
                     </div>
@@ -90,7 +91,7 @@
                 </a>
             </div>
             <div class="selection__container__education">
-                <a onclick="">
+                <a onclick="openEducation()">
                     <div class="selection__container__icon">
                         <img src="../img/icons/icons8-education.png" alt="Image Icon">
                     </div>
@@ -147,18 +148,16 @@
     <!-- Image Section End -->
 
     <!-- Blogs Section Begin -->
-    <section id="education_section" class="education_section">
+    <section id="education__section" class="education__section" style="display: none;">
         <div class="education__container">
             <div class="timeline__container right">
                 <div class="education__pic__item">
-                    <img src="../img/logo/" alt="">
+                    <img src="../img/logo/coursera-logo.png" alt="">
                 </div>
                 <div class="education__text__item">
                     <div class="education__content">
                         <div class="education__content__title">
-                            <h4>2023-Present</h4>
-                            <h3>Google UX Design Professional</h3>
-                            <h5>Coursera</h5>
+                            <h3>Google UX Design Professional | Coursera | 2023-Present</h3>
                         </div>
                     </div>
                     <div>
@@ -172,15 +171,11 @@
                 </div>
             </div>
             <div class="timeline__container left">
-                <div class="education__content">
-                    <div>
-                        <div class="education__pic__item">
-                            <img src="img/icons/uom-logo.png" alt="">
-                        </div>
-                        <div>
-                            <h4>2022-Present</h4>
-                            <h3>Information Technology</h3>
-                            <h5>Institute of Technology University of Moratuwa</h5>
+
+                <div class="education__text__item">
+                    <div class="education__content">
+                        <div class="education__content__title">
+                            <h3>Information Technology | Institute of Technology University of Moratuwa | 2022-Present</h3>
                         </div>
                     </div>
                     <div>
@@ -192,17 +187,18 @@
                         </p>
                     </div>
                 </div>
+                <div class="education__pic__item">
+                    <img src="../img/logo/uom-logo.png" alt="">
+                </div>
             </div>
             <div class="timeline__container right">
-                <div class="education__content">
-                    <div>
-                        <div class="education__pic__item">
-                            <img src="img/icons/minhath-logo.png" alt="">
-                        </div>
-                        <div>
-                            <h4>2018-2020</h4>
-                            <h3>Physical Science</h3>
-                            <h5>MR/Minhath National School</h5>
+                <div class="education__pic__item">
+                    <img src="../img/logo/minhath-logo.png" alt="">
+                </div>
+                <div class="education__text__item">
+                    <div class="education__content">
+                        <div class="education__content__title">
+                            <h3>Physical Science | MR/Minhath National School | 2018-2020</h3>
                         </div>
                     </div>
                     <div>
@@ -216,15 +212,10 @@
                 </div>
             </div>
             <div class="timeline__container left">
-                <div class="education__content">
-                    <div>
-                        <div class="education__pic__item">
-                            <img src="img/icons/alyaseen-logo.png" alt="">
-                        </div>
-                        <div>
-                            <h4>2006-2010</h4>
-                            <h3>Primary, Lower & Upper Secondary</h3>
-                            <h5>BD/Al-Yaseen Muslim Vidyalaya</h5>
+                <div class="education__text__item">
+                    <div class="education__content">
+                        <div class="education__content__title">
+                            <h3>Primary, Lower & Upper Secondary | BD/Al-Yaseen Muslim Vidyalaya | 2006-2010</h3>
                         </div>
                     </div>
                     <div>
@@ -234,6 +225,9 @@
                             Notably, I achieved success in the Grade 5 scholarship exam, showcasing my commitment to academic excellence.
                         </p>
                     </div>
+                </div>
+                <div class="education__pic__item">
+                    <img src="../img/logo/alyaseen-logo.png" alt="">
                 </div>
             </div>
           </div>
