@@ -20,10 +20,12 @@
     <link rel="stylesheet" href=".../css/hero.css" type="text/css">
     <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="../css/gallery.css" type="text/css">
+    <link rel="stylesheet" href="../css/portfolio.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Js Files -->
     <script src="../js/gallery.js" defer></script>
+    <script src="../js/portfolio.js" defer></script>
 
 
 </head>
@@ -113,25 +115,368 @@
 
     <!-- Portfolio Section Begin -->
     <section id="portfolio_section" class="portfolio_section">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title center-title">
-                    <span>Here are some of the projects I've worked on</span>
-                    <h2>Portfolio</h2>
-                </div>
-            </div>
-        </div>
         <div class="portfolio__container">
-            <div class="portfolio__item">
-                <div class="portfolio__item__image">
-                    <img src="../img/portfolio/portfolio1.jpg" alt="Portfolio1">
-                    <div class="view__link">
-                        <a href=" " target="_blank" rel="noopener" class="view__btn">View Project <i class="fa fa-link fa-lg"></i></a>
-                    </div>
+                <div class="">
+                    <ul class="portfolio__filter">
+                        <li onclick="showAllPortfolio()" class="active" data-filter="*">All</li>
+                        <li onclick="showConsolePortfolio()" data-filter=".console">Console</li>
+                        <li onclick="showDesignPortfolio()" data-filter=".LogoDesigns">Logo Designs</li>
+                        <li onclick="showWebPortfolio()" data-filter=".web">Web Sites</li>
+                        <li onclick="showFlyerPortfolio()" data-filter=".flyers">Flyers</li>
+                    </ul>
                 </div>
-                <div class="portfolio__item__text">
-                    <h3>Project 1</h3>
-                    <p>Project Description</p>
+            <div class="portfolio__gallery">
+                <div class="pages">
+                    <div id="prevButton" onclick="showPrevPortfolioPage()"><img src="../img/icons/prev.png" alt="Back Icon"></div>
+                    <div class="portfolio__page portfolio__page1">
+                        <div class="mix web">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/fusionfeast.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>FusionFeast E-Commerce Platform</h4>
+                                        <h5>Web Site</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://github.com/Ahzem/FusionFeast.git" target="_blank" rel="noopener">
+                                            <img src="../img/icons/github.png" alt="Github Icon">
+                                            <h5>View on GitHub</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix web">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/busify.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Busify - Public Transport Service Website</h4>
+                                        <h5>Web Site</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://github.com/Ahzem/Busify.git" target="_blank" rel="noopener">
+                                            <img src="../img/icons/github.png" alt="Github Icon">
+                                            <h5>View on GitHub</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix LogoDesigns">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/logo-2.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Logo For Hazara Cake House</h4>
+                                        <h5>Logo Design</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/180731867/Hazara-Cake-House-Logo" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix console">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/billing-software.jpg" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Building Better Bills - Python Console Billing System</h4>
+                                        <h5>Console</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://github.com/Ahzem/Billing-System.git" target="_blank" rel="noopener">
+                                            <img src="../img/icons/github.png" alt="GitHub Icon">
+                                            <h5>View on GitHub</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix LogoDesigns">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/logo-1.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Logo For Manas Photography</h4>
+                                        <h5>Logo Design</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/190875067/Manas-Photography-Logo-Design" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix flyers">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/flyer-5.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Best Wishes Flyer For Students</h4>
+                                        <h5>Flyers</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/190878161/Best-Wishes-Flyer" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__page portfolio__page2" style="display: none;">
+                        <div class="mix LogoDesigns">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/logo-3.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Logo For NDM Motors</h4>
+                                        <h5>Logo Design</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/180732161/NDM-Motors-Logo" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix flyers">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/flyer-4.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Flyer For Sri Lanka Independence Day</h4>
+                                        <h5>Flyers</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/190877233/Independence-Day-Flyer" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix LogoDesigns">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/logo-4.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Logo For Joho Vision</h4>
+                                        <h5>Logo Design</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/180732075/Joho-Vision-Logo" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix flyers">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/flyer-2.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Flyer For Children's Day</h4>
+                                        <h5>Flyers</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/181702347/Childrens-Day-Poster-For-OSDEM-DFEC-Science-Project" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix LogoDesigns">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/logo-5.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Logo For Sajee Brand Name</h4>
+                                        <h5>Logo Design</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/190875501/Sajee-Brand-Name-Logo-Design" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix console">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/java-library.jpg" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Java Console Library Management System</h4>
+                                        <h5>Console</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://github.com/Ahzem/Library-Management-System.git" target="_blank" rel="noopener">
+                                            <img src="../img/icons/github.png" alt="GitHub Icon">
+                                            <h5>View on GitHub</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__page portfolio__page3" style="display: none;">
+                        <div class="mix LogoDesigns">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/logo-6.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Logo For Virtual Gem Store</h4>
+                                        <h5>Logo Design</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/180731691/Virtual-Gem-Store-Logo-Design" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix web">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/myportfolio.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>My Portfolio</h4>
+                                        <h5>Web Site</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://github.com/Ahzem/myPortfolio.git" target="_blank" rel="noopener">
+                                            <img src="../img/icons/github.png" alt="GitHub Icon">
+                                            <h5>View on GitHub</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix flyers">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/flyer-1.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Flyer For Hand in Hand Project</h4>
+                                        <h5>Flyers</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/180730359/Hand-in-Hand-Flyer-Design" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix flyers">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/flyer-3.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Flyer For World Teachers' Day</h4>
+                                        <h5>Flyers</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/181702511/Teachers-Day-Poster-For-OSDEM-DFEC-Science-Project" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix LogoDesigns">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/logo-7.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4>Logo For Dream Vision</h4>
+                                        <h5>Logo Design</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/180732735/Dream-Vision-Logo" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mimx flyers">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item__thumbnail">
+                                    <img src="../img/portfolio/flyer-6.png" alt="">
+                                </div>
+                                <div class="portfolio__item__content">
+                                    <div class="portfolio__item__text">
+                                        <h4> Flyer For Release an Article Series</h4>
+                                        <h5>Flyers</h5>
+                                    </div>
+                                    <div class="portfolio__view__link">
+                                        <a href="https://www.behance.net/gallery/180731227/Releasing-Article-Series-Flyer" target="_blank" rel="noopener">
+                                            <img src="../img/icons/behance.png" alt="Behance Icon">
+                                            <h5>View on Behance</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="nextButton" onclick="showNextPortfolioPage()"><img src="../img/icons/next.png" alt="Next Icon"></div>
                 </div>
             </div>
         </div>
@@ -519,7 +864,7 @@
             <div id="nextButton" onclick="showNextBlogPage()"><img src="../img/icons/next.png" alt="Next Icon"></div>
         </div>
     </section>
-
     <!-- Blogs Section End -->
+
 </body>
 </html>
