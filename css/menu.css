@@ -1,0 +1,50 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+.menu__section {
+    max-height: 600px;
+    max-width: 700px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    align-items: center;
+	margin: auto;
+
+}
+
+.menu__section a{
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.option__icon {
+    width: 100px;
+    height: 100px;
+}
+
+.option__icon img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+}
+
+.option__icon img:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.option__text h4{
+    font-size: 20px;
+    font-weight:100;
+    color: #ffffff8e;
+}
