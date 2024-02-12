@@ -15,10 +15,11 @@ function openModal(image) {
 
 
 
-  //for the select gallery or blog
-  function openGallery() {
+  //for the select gallery or blog or portfolio
+function openGallery() {
     document.getElementById("gallery_section").style.display = "block";
     document.getElementById("blogs_section").style.display = "none";
+    document.getElementById("portfolio_section").style.display = "none";
     
     var imagesContainers = document.getElementsByClassName('selection__container__images');
     for (var i = 0; i < imagesContainers.length; i++) {
@@ -29,11 +30,17 @@ function openModal(image) {
     for (var i = 0; i < blogsContainers.length; i++) {
         blogsContainers[i].style.backgroundColor = "#007ca200";
     }
+
+    var portfolioContainers = document.getElementsByClassName('selection__container__portfolio');
+    for (var i = 0; i < portfolioContainers.length; i++) {
+        portfolioContainers[i].style.backgroundColor = "#007ca200";
+    }
 }
 
 function openBlogs() {
     document.getElementById("gallery_section").style.display = "none";
     document.getElementById("blogs_section").style.display = "block";
+    document.getElementById("portfolio_section").style.display = "none";
     
     var imagesContainers = document.getElementsByClassName('selection__container__images');
     for (var i = 0; i < imagesContainers.length; i++) {
@@ -44,7 +51,35 @@ function openBlogs() {
     for (var i = 0; i < blogsContainers.length; i++) {
         blogsContainers[i].style.backgroundColor = "#007BA2";
     }
+
+    var portfolioContainers = document.getElementsByClassName('selection__container__portfolio');
+    for (var i = 0; i < portfolioContainers.length; i++) {
+        portfolioContainers[i].style.backgroundColor = "#007ca200";
+    }
 }
+
+function openPortfolio() {
+    document.getElementById("gallery_section").style.display = "none";
+    document.getElementById("blogs_section").style.display = "none";
+    document.getElementById("portfolio_section").style.display = "block";
+    
+    var imagesContainers = document.getElementsByClassName('selection__container__images');
+    for (var i = 0; i < imagesContainers.length; i++) {
+        imagesContainers[i].style.backgroundColor = "#007ca200";
+    }
+    
+    var blogsContainers = document.getElementsByClassName('selection__container__blogs');
+    for (var i = 0; i < blogsContainers.length; i++) {
+        blogsContainers[i].style.backgroundColor = "#007ca200";
+    }
+
+    var portfolioContainers = document.getElementsByClassName('selection__container__portfolio');
+    for (var i = 0; i < portfolioContainers.length; i++) {
+        portfolioContainers[i].style.backgroundColor = "#007BA2";
+    }
+}
+
+
 
 
 //for the gallery

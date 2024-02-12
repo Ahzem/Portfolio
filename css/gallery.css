@@ -22,19 +22,28 @@
 }
 
 .selection__container__blogs,
-.selection__container__images {
+.selection__container__images,
+.selection__container__portfolio{
 	width: 50%;
 	border-radius: 50px;
 	transition: all 0.3s ease;
 	margin: 5px;
 }
 
+.selection__container__portfolio {
+    background-color: #007BA2;
+    border: 1px solid #007BA2;
+}
+
+
 .selection__container__images {
-	background-color: #007BA2;
+	background-color: #007ca200;
+	border: 1px solid #007BA2;
 }
 
 .selection__container__blogs {
 	background-color: #007ca200;
+	border: 1px solid #007BA2;
 }
 
 .selection__section__container {
@@ -57,6 +66,7 @@
 }
 
 .gallery_section {
+	display: none;
 	padding-top: 0;
 	padding-bottom: 0;
 }
@@ -272,12 +282,6 @@
     height: 500px;
 	  }
 
-
-
-
-
-
-
   .blogs__page {
 	display: flex;
 	flex-wrap: wrap;
@@ -369,4 +373,21 @@
   .blogs__item:hover .view__link{
 	opacity: 1;
 	transition: 0.5s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Portfolio section */
+  .portfolio_section {
+	padding: 10px;
+	height: 500px;
   }

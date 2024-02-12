@@ -9,8 +9,9 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background: #007BA2;
+    background: #007ca211;
     border-radius: 20px 20px 0 0;
+    border-top: 1px solid #007BA2;
     z-index: 9;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);

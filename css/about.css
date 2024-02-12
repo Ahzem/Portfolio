@@ -28,10 +28,12 @@
 
 .selection__container__info {
 	background-color: #007BA2;
+    border: 1px solid #007BA2;
 }
 
 .selection__container__education {
 	background-color: #007ca200;
+    border: 1px solid #007BA2;
 }
 
 .selection__section__container {
@@ -285,4 +287,144 @@
 .timeline__container:hover p {
     color: #ffffffd0;
     transition: all 0.5s ease;
+}
+
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+    .info__section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 120px;
+    }
+
+    .info__container__pic {
+        display: none;
+    }
+
+    .info__container__pic__item--small {
+        width: 200px;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .info__container__pic__item--small div {
+        margin: 2px;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        display: none;
+    }
+
+    .info__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 5px;
+        width: 400px;
+    }
+
+    .info__container__sub__content {
+        width: 250px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+
+    .info__container__text h2 {
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: #007BA2;
+        text-transform: uppercase;
+    }
+
+    .info__container__text p {
+        font-size: 0.8rem;
+        font-weight: 390;
+        color: #ffffffab;
+        line-height: 1.1;
+    }
+
+    .info__container__text h4 {
+        font-size: 1.2rem;
+        font-weight: 800;
+        color: #007BA2;
+        text-transform: uppercase;
+    }
+
+    .education__section {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 110px;
+    }
+
+    .timeline__container {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 300px;
+        height: 120px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .education__pic__item {
+        width: 80px;
+        height: 120px;
+        margin-top: 0px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .education__pic__item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .education__text__item {
+        border-radius: 8px;
+        border: 1px solid #ffffff50;
+        top: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 120px;
+        line-height: 0.6;
+    }
+
+    .education__text__item p {
+        font-size: 0.7rem;
+        font-weight: 350;
+        color: #ffffffab;
+        line-height: 1;
+    }
+
+    .education__content__title h3 {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #ffffffce;
+        margin-bottom: -5px;
+        line-height: 1;
+    }
+
+    .services__item__icon img{
+        width: 30px;
+        height: 30px;
+    }
+
 }
