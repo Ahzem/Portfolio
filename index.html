@@ -73,44 +73,22 @@
             </nav>
         </div>
     </header>
-    <!-- Header End -->
 
-    <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="hero__img">
-            <img src="img/hero/hero-off.png" alt="">
-            <div class="hero__text">
-                <h2>Ahzem</h2>
-                <p>Designer | Developer</p>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
-    <!-- Bulb Switch -->
-    <div class="switch__system">
-        <div class="switch__container">
-            <div class="on__switch" style="display: none;">
-                <img src="./img/icons/icons8-sun.png" alt="Light On">
-            </div>
-            <div class="off__switch">
-                <img src="./img/icons/icons8-night.png" alt="Light Off">
-            </div>
-            <div class="switch">
-                <label>
-                    <label for="checkbox"></label>
-                    <input id="checkbox" type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-        </div>
-        <div>
-            <div class="off__switch__text">
-                <p>Hey, can't you see I'm in the dark?</p>
-            </div>
-            <div class="on__switch__text" style="display: none;">
-                <p>Light's too bright, can't see you!</p>
-            </div>
-        </div>
+    <div id="x" style="display: none;">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfC-eNOe4IkDxeCJrAqwC_riwGZDzHGfsZvBfzu_4qFHxBJMQ/viewform?embedded=true" width="640" height="400" frameborder="0" marginheight="0" marginwidth="0" style="bottom: 5px; right:0; position:absolute" scrolling="no">Loading…</iframe>
     </div>
+    <div>
+        <input type="button" value="Contact Me" onclick="fun()" style="bottom: 0; right: 0; position: fixed; z-index: 1000; cursor: pointer;">
+    </div>
+    <script>
+        function fun() {
+            var x = document.getElementById("x");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

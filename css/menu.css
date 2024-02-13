@@ -47,4 +47,10 @@
     font-size: 20px;
     font-weight:100;
     color: #ffffff8e;
+    opacity: 0;
+}
+
+.option:hover .option__text h4{
+    opacity: 1;
+    transition: 0.3s;
 }
