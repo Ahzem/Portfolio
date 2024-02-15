@@ -27,6 +27,11 @@
     <script src="../js/about.js" defer></script>
     <script src="../js/menu.js" defer></script>
 
+            <!-- Feedback Section -->
+            <link rel="stylesheet" href="../css/feedback.css" type="text/css">
+            <script src="../js/feedback.js" defer></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+
 
 </head>
 <body class="non-selectable">
@@ -196,6 +201,35 @@
     </section>
 
 
+        <!--feedback button Section-->
+        <section class="feedback__section">
+            <div class="feedback__button" title="Feedback">
+                <div class="feedback__icon" onclick="openForm()">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </div>
+                <div class="feedback__form">
+                    <form>
+                        <div class="form__container">
+                            <div class="close__form" onclick="closeForm()">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                            <div class="form__header">
+                                <h2>Feedback</h2>
+                            </div>
+                            <div class="form__body">
+                                <div class="form__group">
+                                    <textarea id="message" name="message" class="no-resize"></textarea>
+                                </div>
+                                <div class="form__group">
+                                    <button type="submit">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--feedback button Section End-->  
 
 
 </body>

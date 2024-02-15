@@ -18,25 +18,18 @@
     <link rel="stylesheet" href="./css/body.css" type="text/css">
     <link rel="stylesheet" href="./css/hero.css" type="text/css">
     <link rel="stylesheet" href="./css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="./css/feedback.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
     <link rel="icon" type="image/x-icon" href="img/favicon_io/favicon.ico">
-
-
+    
+    
     <!-- Js Files -->
     <script src="js/hero.js" defer></script>
 
-    <script>
-        function openForm() {
-            document.getElementsByClassName("feedback__form")[0].style.display = "block";
-        }
-
-        function closeForm() {
-            document.getElementsByClassName("feedback__form")[0].style.display = "none";
-        }
-    </script>
-
+    <!-- Feedback Section -->
+    <link rel="stylesheet" href="./css/feedback.css" type="text/css">
+    <script src="js/feedback.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
 
 </head>
 <body class="non-selectable">
@@ -132,7 +125,7 @@
                 <i class="fa fa-comments" aria-hidden="true"></i>
             </div>
             <div class="feedback__form">
-                <form action="https://formspree.io/f/moqyqzqz" method="POST">
+                <form>
                     <div class="form__container">
                         <div class="close__form" onclick="closeForm()">
                             <i class="fa fa-times" aria-hidden="true"></i>
@@ -153,9 +146,6 @@
             </div>
         </div>
     </section>
-
-
-
-    
+    <!--feedback button Section End-->  
 </body>
 </html>

@@ -23,7 +23,13 @@
     <!-- Js Files -->
     <script src="../js/about.js" defer></script>
     <script src="../js/menu.js" defer></script>
+    <script src="../js/contact.js" defer></script>
 
+
+            <!-- Feedback Section -->
+            <link rel="stylesheet" href="../css/feedback.css" type="text/css">
+            <script src="../js/feedback.js" defer></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
 
 </head>
 <body class="select">
@@ -144,59 +150,35 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!--feedback button Section-->
+        <section class="feedback__section">
+            <div class="feedback__button" title="Feedback">
+                <div class="feedback__icon" onclick="openForm()">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </div>
+                <div class="feedback__form">
+                    <form>
+                        <div class="form__container">
+                            <div class="close__form" onclick="closeForm()">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                            <div class="form__header">
+                                <h2>Feedback</h2>
+                            </div>
+                            <div class="form__body">
+                                <div class="form__group">
+                                    <textarea id="message" name="message" class="no-resize"></textarea>
+                                </div>
+                                <div class="form__group">
+                                    <button type="submit">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--feedback button Section End-->  
 
-    <script>
-
-        const form = document.querySelector("form");
-        form.addEventListener("submit", (event) => {
-      // prevent the form submit from refreshing the page
-        event.preventDefault();
-    
-        const { name, email, message } = event.target;
-    
-            // Use your API endpoint URL you copied from the previous step
-        const endpoint =
-            "https://t1l3clfutj.execute-api.eu-north-1.amazonaws.com/default/sendContactEmail";
-        // We use JSON.stringify here so the data can be sent as a string via HTTP
-            const body = JSON.stringify({
-            senderName: name.value,
-            senderEmail: email.value,
-            message: message.value
-        });
-        const requestOptions = {
-            method: "POST",
-            body
-        };
-            fetch(endpoint, requestOptions)
-            .then((response) => {
-                if (response.status === 200) {
-                    Swal.fire({
-                        title: "Message Sent",
-                        text: "Thank you for reaching out to me. I will get back to you as soon as possible.",
-                        icon: "success",
-                        confirmButtonText: "OK"
-                    });
-                    form.reset();
-                } else {
-                    Swal.fire({
-                        title: "Message Not Sent",
-                        text: "There was an error sending your message. Please try again later.",
-                        icon: "error",
-                        confirmButtonText: "OK"
-                    });
-                }
-            })
-            .catch((error) => {
-                Swal.fire({
-                    title: "Message Not Sent",
-                    text: "There was an error sending your message. Please try again later.",
-                    icon: "error",
-                    confirmButtonText: "OK"
-                });
-            });
-        });
-    </script>
-    
 </body>
 </html>

@@ -14,9 +14,9 @@
 
 .feedback__icon {
     position: fixed;
-    bottom:70px;
+    bottom:150px;
     right: 0;
-    margin: 20px;
+    margin: 10px;
     color: white;
     border: none;
     text-align: center;
@@ -32,6 +32,7 @@
     height: 40px;
     width: 40px;
     line-height: 40px;
+    z-index: 1000;
 }
 
 .feedback__icon:hover {
