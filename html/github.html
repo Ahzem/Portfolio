@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ahzem's Portfolio">
+    <meta name="keywords" content="Developer, Ahzem, Creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ahzem</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="../img/favicon_io/favicon.ico">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/body.css" type="text/css">
+    <link rel="stylesheet" href="../css/version.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Js Files -->
+    <script src="../js/about.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+
+            <!-- Feedback Section -->
+            <link rel="stylesheet" href="../css/feedback.css" type="text/css">
+            <script src="../js/feedback.js" defer></script>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+
+  
+</head>
+<body class="non-selectable">
+
+    <!-- Back Button for Menu Page -->
+    <div class="back-button">
+        <a href="../html/menu.html">
+            <img src="../img/icons/icons8-back.png" alt="Back Button">
+        </a>
+    </div>
+
+    <!-- guthub states section -->
+    <section class="github__section">
+        <div class="github__container">
+            <div class="github__header">
+                <h2>My Git States</h2>
+            </div>
+            <div class="github__states">
+                <div class="github__profile__trophy">
+                    <img src="https://github-profile-trophy.vercel.app/?username=ahzem&theme=tokyonight&row=1&column=6">
+                </div>
+                <div class="git__states">
+                    <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Ahzem&theme=tokyonight">
+                </div>
+                <div class="git__states">
+                    <img src="http://github-readme-streak-stats.herokuapp.com?user=ahzem&theme=tokyonight">
+                </div>
+                <div class="github__activity__graph">
+                    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ahzem&custom_title=Ahzem's%20Contribution%20Graph&theme=react-dark">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .github__section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .github__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .github__header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .github__header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .github__profile__trophy {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .github__profile__trophy img {
+            height: 120px;
+        }
+
+        .github__states {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+
+        .git__states {
+            height:150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 10px;
+        }
+
+        .git__states img {
+            
+            height: 150px;
+        }
+
+        .github__activity__graph {
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .github__activity__graph img {
+            width: 100%;
+            max-width: 1200px;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .github__header h2 {
+                font-size: 2rem;
+            }
+
+            .github__profile__trophy img {
+                height: 100px;
+            }
+
+            .git__states img {
+                height: 100px;
+            }
+
+            .github__activity__graph img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+            .github__header h2 {
+                font-size: 1.5rem;
+            }
+
+            .github__profile__trophy img {
+                height: 80px;
+            }
+
+            .git__states img {
+                height: 80px;
+            }
+
+            .github__activity__graph img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+    </style>
+    <!-- guthub states section end -->
+
+        <!--feedback button Section-->
+        <section class="feedback__section">
+            <div class="feedback__button" title="Feedback">
+                <div class="feedback__icon" onclick="openForm()">
+                    <i class="fa fa-comments" aria-hidden="true"></i>
+                </div>
+                <div class="feedback__form">
+                    <form>
+                        <div class="form__container">
+                            <div class="close__form" onclick="closeForm()">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                            <div class="form__header">
+                                <h2>Feedback</h2>
+                            </div>
+                            <div class="form__body">
+                                <div class="form__group">
+                                    <textarea id="message" name="message" class="no-resize"></textarea>
+                                </div>
+                                <div class="form__group">
+                                    <button type="submit">Send</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--feedback button Section End-->  
+
+</body>
+</html>

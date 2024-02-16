@@ -278,8 +278,6 @@
 }
 
 .timeline__container:hover h3 {
-    font-size: 1.2rem;
-    font-weight: 500;
     color: #008fbb;
     transition: all 0.5s ease;
 }
@@ -378,7 +376,7 @@
         display: flex;
         flex-direction: row;
         position: relative;
-        width: 300px;
+        width: 400px;
         height: 120px;
         border-radius: 10px;
         margin: 10px;
@@ -386,25 +384,43 @@
 
     .education__pic__item {
         width: 80px;
-        height: 120px;
+        height: 80px;
         margin-top: 0px;
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .education__pic__item img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 
     .education__text__item {
         border-radius: 8px;
         border: 1px solid #ffffff50;
-        top: -10px;
+ 
         padding-left: 10px;
         padding-right: 10px;
-        height: 120px;
+        height: 125px;
+        width: 400px;
         line-height: 0.6;
+        margin: 0px;
+    }
+
+    .right {
+        right: 25px;
+    }
+
+    .left {
+        left: 55px;
+    }
+
+    .left::before{
+        display: none;
+    }
+
+    .right::before{
+        display: none;
     }
 
     .education__text__item p {
@@ -423,6 +439,34 @@
     }
 
     .services__item__icon img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .selection__container__education,
+    .selection__container__info {
+        width: 100%;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        margin: 5px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .selection__section {
+        position: fixed;
+        left: 0;
+        bottom: 70px;
+        width: 100%;
+        z-index: 9;
+    }
+
+    .selection__container__icon{
+        margin-right: 10px;
+    }
+
+    .selection__section__container div a img {
         width: 30px;
         height: 30px;
     }

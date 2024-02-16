@@ -125,3 +125,56 @@ function showPrevBlogPage() {
     }
 }
 
+
+
+function showAllPortfolio() {
+    var x = document.getElementsByClassName("mix");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "block";
+    }
+}
+function showConsolePortfolio() {
+    var x = document.getElementsByClassName("mix");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    var y = document.getElementsByClassName("console");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+}
+function showDesignPortfolio() {
+    var x = document.getElementsByClassName("mix");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    var y = document.getElementsByClassName("LogoDesigns");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+}
+function showWebPortfolio() {
+    var x = document.getElementsByClassName("mix");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    var y = document.getElementsByClassName("web");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+}
+function showFlyerPortfolio() {
+    var x = document.getElementsByClassName("mix");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    var y = document.getElementsByClassName("flyers");
+    for (i = 0; i < y.length; i++) {
+        y[i].style.display = "block";
+    }
+}

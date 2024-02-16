@@ -1,3 +1,70 @@
+.contact__icon {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.contact__icon a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.contact__icon:hover {
+    opacity: 1;
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.contact__icon:hover i {
+    color: black;
+}
+
+.contact__icon i {
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+
+/*responsive*/
+@media (max-width: 768px) {
+    .contact__icon {
+        bottom: 52px;
+        right: 0;
+        margin: 10px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.6;
+    }
+
+    .contact__icon,
+    .feedback__icon {
+        position: fixed;
+        left: 0;
+    }
+}
+
+
+
+
+
+
 .feedback__form {
     display: none;
     position: absolute;
@@ -159,4 +226,53 @@
 
 .no-resize {
     resize: none;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 768px) {
+    .feedback__icon {
+        bottom: 100px;
+    }
+
+    .feedback__form {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        width: 500px;
+        height: 500px;
+        
+    }
+
+
+    .form__group input,
+    .form__group textarea {
+            width: 280px;
+            height: 120px;
+        padding: 10px;
+        align-items: center;
+
+    }
+
+    .form__group button {
+        padding: 10px 50px;
+        border-radius: 5px;
+        border: none;
+        background-color: #000;
+        color: white;
+        cursor: pointer;
+    }
+
+    .form__group input[type="submit"] {
+        background-color: #000;
+        color: white;
+        cursor: pointer;
+    }
+
+    .form__group input[type="submit"]:hover {
+        background-color: #333;
+    }
 }

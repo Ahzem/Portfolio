@@ -271,6 +271,122 @@
     .contact__info__title h1 {
         font-size: 2rem;
     }
+
+    .contact__section {
+      display: block;
+      width: 100%;
+
+    }
+
+    .contact__form__section {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .contact__form__item h3 {
+        font-size: 2rem;
+    }
+
+    .contact__form__title {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    .contact__form__section form input {
+        width: 300px;
+    }
+
+    .contact__form__section form input {
+        width: 300px;
+    }
+
+    .contact__form__section form textarea {
+        width: 300px;
+    }
+
+    .contact__form__section form button {
+        width: 100%;
+    }
+
+    .social__section {
+        width: 100%;
+    }
+
+    .social__item__icon {
+        justify-content: center;
+    }
+
+    .social__item i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin: 3px;
+    }
+
+    .social__item__title h3 {
+        font-size: 2rem;
+    }
+
+    .contact__option .title__section {
+        margin-top: 50px;
+    }
+
+    .contact__option h3 {
+        font-size: 2rem;
+    }
+
+    .contact__widget__item {
+        width: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact__widget__item__icon {
+        margin: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact__widget__item__icon i {
+        font-size: 25px;
+    }
+
+    .contact__widget__item__text {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact__widget__item__text h4 {
+        font-size: 20px;
+    }
+
+    .contact__widget__item__text p {
+        font-size: 16px;
+    }
+    
+    .contact__section .map__section {
+        width: 320px;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+    }
+
+    .back-button {
+        padding: 10px;
+        position: fixed;
+        border-radius: 50%;
+        background: #000000;
+    }
+
+    .back-button img {
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
 @media (max-width: 576px) {
