@@ -13,6 +13,14 @@ function openModal(image) {
 	modal.style.display = "none";
   }
 
+  //close the model when clicked outside the image
+    window.onclick = function(event) {
+        var modal = document.getElementById("modal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
 
 
   //for the select gallery or blog or portfolio
