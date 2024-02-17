@@ -52,3 +52,29 @@
     height: 200px;
     border-radius: 50%;
 }
+
+
+@media (max-width: 768px) {
+    .back-button {
+        top: 0px;
+        left: 0px;
+        border-radius: 50%;
+    }
+
+    .back-button img {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        background: #ffffff0c;
+        border-radius: 50%;
+        backdrop-filter: blur(10px);
+    }
+
+    .back-button a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1px;
+        height: 1px;
+    }
+}

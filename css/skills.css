@@ -1,0 +1,200 @@
+.circle-wrap {
+    margin: 5px auto;
+    width: 80px;
+    height: 80px;
+    background: #dddddd46;
+    border-radius: 50%;
+  }
+  
+  .circle-wrap .circle .mask,
+  .eng_fill, .tam_fill, .sin_fill {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 80px, 80px, 40px);
+  }
+  
+  .circle-wrap .circle .mask .eng_fill,
+  .circle-wrap .circle .mask .tam_fill,
+  .circle-wrap .circle .mask .sin_fill {
+    clip: rect(0px, 40px, 80px, 0px);
+    background-color: #04cdff;
+  }
+  
+  .english .circle .mask.full,
+  .english .circle .eng_fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(100deg);
+  }
+  .tamil .circle .mask.full,
+  .tamil .circle .tam_fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(180deg);
+  }
+  .sinhala .circle .mask.full,
+  .sinhala .circle .sin_fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(160deg);
+  }
+  
+  
+  .circle-wrap .inside-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #000000;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+  }
+
+        /* Back Button */
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+    .all__in__one {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+        /* Skills Section */
+        .skills__section {
+            padding: 10px;
+        }
+        .skills__header h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        .skills__header h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #c0c0c0;
+        }
+        .skills__container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .tools__skills, .languages__skills, .web__skills, .programming__skills {
+            border: 1px solid #c0c0c00e;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tools__skills {
+            width: 380px;
+            margin: 5px auto;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .languages__skills {
+            width: 150px;
+            margin: 5px auto;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .languages__skills .skills__container {
+            justify-content: space-between;
+        }
+
+        .web__skills {
+            width: 280px;
+            margin: 5px auto;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .programming__skills {
+            width: 280px;
+            margin: 5px auto;
+            padding: 5px;
+            border-radius: 10px;
+            
+
+        }
+        .skill {
+            width: 80px;
+            margin-bottom: 2px;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .skill:hover {
+            transform: translateY(-10px);
+        }
+        .skill__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .skill__icon img {
+            width: 80px;
+            height: 80px;
+        }
+        .skill__text h4 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #333;
+            text-align: center;
+        }
+
+
+        /*Responsive*/
+
+        @media (max-width: 768px) {
+            .tools__skills, .languages__skills, .web__skills, .programming__skills {
+                width: 100%;
+            }
+        }
+
+        /*Back Button Responsive*/
+
+        @media (max-width: 768px) {
+            .back-button {
+                top: 0px;
+                left: 0px;
+                border-radius: 50%;
+            }
+
+            .back-button img {
+                width: 40px;
+                height: 40px;
+                padding: 8px;
+                background: #ffffff0c;
+                border-radius: 50%;
+                backdrop-filter: blur(10px);
+            }
+
+            .back-button a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 1px;
+                height: 1px;
+            }
+        }

@@ -18,6 +18,7 @@
     <!-- Css Styles -->
     <link rel="stylesheet" href="../css/body.css" type="text/css">
     <link rel="stylesheet" href="../css/version.css" type="text/css">
+    <link rel="stylesheet" href="../css/skills.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Js Files -->
@@ -226,27 +227,47 @@
                 <div class="skills__container">
                     <div class="skill">
                         <div class="skill__icon">
-                            <!--Percentage-->
-                            
-                        </div>
-                        <div class="skill__text">
-                            <h4>English</h4>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill__icon">
-                            <img src="../img/logo/arabic-240.png" alt="">
-                        </div>
-                        <div class="skill__text">
-                            <h4>Tamil</h4>
+                            <div class="circle-wrap english">
+                                <div class="circle">
+                                  <div class="mask full">
+                                    <div class="eng_fill"></div>
+                                  </div>
+                                  <div class="mask half">
+                                    <div class="eng_fill"></div>
+                                  </div>
+                                  <div class="inside-circle"> English </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="skill">
                         <div class="skill__icon">
-                            <img src="../img/logo/tamil-240.png" alt="">
+                            <div class="circle-wrap tamil">
+                                <div class="circle">
+                                  <div class="mask full">
+                                    <div class="tam_fill"></div>
+                                  </div>
+                                  <div class="mask half">
+                                    <div class="tam_fill"></div>
+                                  </div>
+                                  <div class="inside-circle"> Tamil </div>
+                                </div>
+                              </div>
                         </div>
-                        <div class="skill__text">
-                            <h4>Sinhala</h4>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__icon">
+                            <div class="circle-wrap sinhala">
+                                <div class="circle">
+                                  <div class="mask full">
+                                    <div class="sin_fill"></div>
+                                  </div>
+                                  <div class="mask half">
+                                    <div class="sin_fill"></div>
+                                  </div>
+                                  <div class="inside-circle"> Sinhala </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -254,116 +275,6 @@
         </div>
     </section>
     <!--skills section End-->
-
-    <style>
-
-        /* Back Button */
-        .back-button {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-        }
-
-    .all__in__one {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-
-        /* Skills Section */
-        .skills__section {
-            padding: 10px;
-        }
-        .skills__header h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #ffffff;
-            text-transform: uppercase;
-        }
-        .skills__header h3 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: #c0c0c0;
-        }
-        .skills__container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .tools__skills, .languages__skills, .web__skills, .programming__skills {
-            border: 1px solid #c0c0c023;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .tools__skills {
-            width: 380px;
-            margin: 5px auto;
-            padding: 5px;
-            border-radius: 10px;
-        }
-
-        .languages__skills {
-            width: 150px;
-            margin: 5px auto;
-            padding: 5px;
-            border-radius: 10px;
-        }
-
-        .languages__skills .skills__container {
-            justify-content: space-between;
-        }
-
-        .web__skills {
-            width: 280px;
-            margin: 5px auto;
-            padding: 5px;
-            border-radius: 10px;
-        }
-
-        .programming__skills {
-            width: 280px;
-            margin: 5px auto;
-            padding: 5px;
-            border-radius: 10px;
-            
-
-        }
-        .skill {
-            width: 80px;
-            margin-bottom: 2px;
-            padding: 5px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-        .skill:hover {
-            transform: translateY(-10px);
-        }
-        .skill__icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .skill__icon img {
-            width: 80px;
-            height: 80px;
-        }
-        .skill__text h4 {
-            font-size: 1rem;
-            font-weight: 500;
-            color: #333;
-            text-align: center;
-        }
-
-
-
-    </style>
     
         <!--feedback button Section-->
         <section class="feedback__section">
