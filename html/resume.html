@@ -28,7 +28,39 @@
             <link rel="stylesheet" href="../css/feedback.css" type="text/css">
             <script src="../js/feedback.js" defer></script>
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+<style>
+    .embeded__resume {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
 
+    .embeded__resume h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .embeded__resume object {
+        width: 60%;
+        height: 500px;
+    }
+
+    .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+    }
+
+    .back-button img {
+        width: 50px;
+        height: 50px;
+    }
+
+</style>
   
 </head>
 <body class="non-selectable">
@@ -41,19 +73,11 @@
     </div>
 
     <!-- Version Section-->
-    <section class="version">
-        <div class="version__container">
-            <div class="version__content">
-                <h1>Version</h1>
-                <p>Version 1.1.0</p>
-            </div>
-            <div class="logo">
-                <img src="../img/logo/logo.jpg" alt="Logo">
-            </div>
-            <div class="version__content">
-                <p>Designed and Developed by Ahzem</p>
-            </div>
-        </div>
+    <section class="embeded__resume">
+        <h1>My Resume</h1>
+        <object data="../files/My New Resume.pdf" type="application/pdf">
+          <p>Unable to display PDF file. <a href="../files/My New Resume.pdf">Download</a> instead.</p>
+        </object>
     </section>
 
         <!--feedback button Section-->

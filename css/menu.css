@@ -4,7 +4,7 @@
 }
 .menu__section {
     max-height: 600px;
-    max-width: 800px;
+    max-width: 900px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
