@@ -80,6 +80,7 @@
 	justify-content: center;
     align-items: center;
 	margin: 0 auto;
+	padding-bottom: 150px;
 
   }
 
@@ -89,15 +90,15 @@
 	align-items: center;
 	margin-left: 50px;
 	margin-right: 50px;
+	margin-bottom: 150px;
   }
   
-  .gallery__page1,
-    .gallery__page2,
-    .gallery__page3 {
+  .gallery__page {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+	padding-bottom: 155px;
     }
     
 .gallery__item {
@@ -254,9 +255,9 @@
 	.close {
 		position: absolute;
 		top: 50px;
-		right: 10px;
+		right: 20px;
 		color: #ffffff;
-		font-size: 40px;
+		font-size: 50px;
 	  }
 
 	  .modal-content {
