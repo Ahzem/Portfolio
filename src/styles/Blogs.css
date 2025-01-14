@@ -180,9 +180,3 @@
 		font-size: 0.4rem;
 	}
   }
-  @media (max-width: 240px) {
-	.blogs__item__image img {
-		width: 30px;
-		height: 30px;
-	}
-	.blogs__item__

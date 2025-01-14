@@ -464,6 +464,7 @@
         height: 50px;
         align-items: center;
         justify-content: center;
+        -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
     }
 

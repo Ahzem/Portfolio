@@ -67,6 +67,7 @@
         padding: 8px;
         background: #ffffff0c;
         border-radius: 50%;
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
     }
 
