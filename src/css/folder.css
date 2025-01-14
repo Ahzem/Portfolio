@@ -1,0 +1,61 @@
+.selection__section__container div a img {
+	width: 40px;
+	height: 40px;
+}
+
+.selection__section__container div a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.selection__section__container div a h2 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.selection__container__portfolio,
+.selection__container__images,
+.selection__container__blogs {
+	width: 33.33%;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+	margin: 5px;
+}
+
+.selection__container__portfolio {
+	background-color: #007BA2;
+    border: 1px solid #007BA2;
+}
+
+.selection__container__images {
+	background-color: #007ca200;
+    border: 1px solid #007BA2;
+}
+
+.selection__container__blogs {
+	background-color: #007ca200;
+    border: 1px solid #007BA2;
+}
+
+.selection__section__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.selection__section {
+	position: fixed;
+	left: 0;
+	bottom: 95px;
+	width: 100%;
+	z-index: 9;
+	height: 60px;
+}
+
+.selection__container__icon{
+	margin-right: 30px;
+}

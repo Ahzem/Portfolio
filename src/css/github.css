@@ -1,0 +1,122 @@
+.github__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.github__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.github__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github__header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.github__profile__trophy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github__profile__trophy img {
+    height: 120px;
+}
+
+.github__states {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.git__states {
+    height:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.git__states img {
+    
+    height: 150px;
+}
+
+.github__activity__graph {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github__activity__graph img {
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .github__header h2 {
+        font-size: 2rem;
+    }
+
+    .github__profile__trophy img {
+        height: 80px;
+    }
+
+    .git__states img {
+        height: 100px;
+    }
+
+    .github__activity__graph img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .github__states .github__states2 {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .github__header h2 {
+        font-size: 1.5rem;
+    }
+
+    .github__profile__trophy img {
+        height: 70px;
+    }
+
+    .git__states img {
+        height: 120px;
+    }
+
+    .github__activity__graph img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .github__states .github__states2 {
+        width: 400px;
+    }
+}
